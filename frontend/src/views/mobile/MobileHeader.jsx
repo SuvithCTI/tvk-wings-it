@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import { TVKFlag } from '../../components/common/TVKFlag';
-import { Menu, X, Phone, Shield, UserCheck, LogOut, Sparkles } from 'lucide-react';
+import { Menu, X, Shield, UserCheck, LogOut, Sparkles } from 'lucide-react';
 
 export const MobileHeader = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -23,13 +23,6 @@ export const MobileHeader = () => {
         </Link>
 
         <div className="flex items-center gap-2">
-          <a
-            href="tel:9876543210"
-            className="p-1.5 text-tvk-red bg-rose-50 rounded-full hover:bg-rose-100 transition-colors"
-            title="Call Helpline"
-          >
-            <Phone className="w-3.5 h-3.5" />
-          </a>
           <button
             onClick={() => setDrawerOpen(!drawerOpen)}
             className="p-1.5 text-slate-700 hover:bg-slate-100 rounded-lg"

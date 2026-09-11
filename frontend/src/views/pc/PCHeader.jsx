@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import { TVKFlag } from '../../components/common/TVKFlag';
-import { Shield, PhoneCall, UserCheck, LogOut } from 'lucide-react';
+import { Shield, UserCheck, LogOut } from 'lucide-react';
 
 export const PCHeader = () => {
   const location = useLocation();
@@ -76,13 +76,7 @@ export const PCHeader = () => {
 
         {/* Right Callouts & Auth Buttons */}
         <div className="flex items-center gap-4">
-          <a
-            href="tel:9876543210"
-            className="hidden lg:flex items-center gap-2 px-3.5 py-1.5 bg-rose-50 text-tvk-red rounded-full text-xs font-bold border border-rose-100 hover:bg-rose-100 transition-colors"
-          >
-            <PhoneCall className="w-3.5 h-3.5" />
-            <span>Hotline: 9876543210</span>
-          </a>
+
 
           {user ? (
             <div className="flex items-center gap-3">

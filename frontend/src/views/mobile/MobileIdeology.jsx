@@ -212,89 +212,89 @@ export const MobileIdeology = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-3">
+          <div className="grid grid-cols-2 gap-3">
             {/* 1. Democracy */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-rose-50/90 via-white to-red-50/70 p-3.5 rounded-2xl shadow-md border-2 border-rose-200 border-b-4 border-b-tvk-red space-y-2 active:scale-[0.99] transition-transform">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-tvk-red to-[#8B090E] text-tvk-yellow flex items-center justify-center border border-rose-300 shadow-sm shrink-0">
+            <div className="relative overflow-hidden bg-gradient-to-br from-rose-50/90 via-white to-red-50/70 p-3 rounded-2xl shadow-md border-2 border-rose-200 border-b-4 border-b-tvk-red space-y-2 active:scale-[0.99] transition-transform">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-tvk-red to-[#8B090E] text-tvk-yellow flex items-center justify-center border border-rose-300 shadow-sm shrink-0">
                   <Landmark className="w-4 h-4 text-tvk-yellow" />
                 </div>
                 <div>
-                  <h3 className="font-black text-sm text-tvk-red">Democracy</h3>
-                  <p className="font-tamil text-[11px] font-bold text-amber-600">ஜனநாயகம்</p>
+                  <h3 className="font-black text-xs text-tvk-red">Democracy</h3>
+                  <p className="font-tamil text-[10px] font-bold text-amber-600">ஜனநாயகம்</p>
                 </div>
               </div>
-              <p className="text-xs text-slate-700 font-medium">Commitment to democratic principles and citizen participation in governance.</p>
+              <p className="text-[10px] text-slate-700 font-medium">Commitment to democratic principles and citizen participation in governance.</p>
             </div>
 
             {/* 2. Technology */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-amber-50/90 via-white to-yellow-50/70 p-3.5 rounded-2xl shadow-md border-2 border-amber-200 border-b-4 border-b-tvk-yellow space-y-2 active:scale-[0.99] transition-transform">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-tvk-yellow via-amber-400 to-yellow-500 text-slate-950 flex items-center justify-center border border-amber-200 shadow-sm shrink-0">
+            <div className="relative overflow-hidden bg-gradient-to-br from-amber-50/90 via-white to-yellow-50/70 p-3 rounded-2xl shadow-md border-2 border-amber-200 border-b-4 border-b-tvk-yellow space-y-2 active:scale-[0.99] transition-transform">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-tvk-yellow via-amber-400 to-yellow-500 text-slate-950 flex items-center justify-center border border-amber-200 shadow-sm shrink-0">
                   <Globe className="w-4 h-4 text-tvk-red" />
                 </div>
                 <div>
-                  <h3 className="font-black text-sm text-slate-900">Technology</h3>
-                  <p className="font-tamil text-[11px] font-bold text-tvk-red">தொழில்நுட்பம்</p>
+                  <h3 className="font-black text-xs text-slate-900">Technology</h3>
+                  <p className="font-tamil text-[10px] font-bold text-tvk-red">தொழில்நுட்பம்</p>
                 </div>
               </div>
-              <p className="text-xs text-slate-800 font-semibold">Leveraging innovation for transparent and efficient public services.</p>
+              <p className="text-[10px] text-slate-800 font-semibold">Leveraging innovation for transparent and efficient public services.</p>
             </div>
 
             {/* 3. Tamil Pride */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-red-50/90 via-white to-amber-50/70 p-3.5 rounded-2xl shadow-md border-2 border-red-200 border-b-4 border-b-tvk-red space-y-2 active:scale-[0.99] transition-transform">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-tvk-red to-[#8B090E] text-tvk-yellow flex items-center justify-center border border-rose-300 shadow-sm shrink-0">
-                  <span className="font-tamil font-black text-xs text-tvk-yellow">தமிழ்</span>
+            <div className="relative overflow-hidden bg-gradient-to-br from-red-50/90 via-white to-amber-50/70 p-3 rounded-2xl shadow-md border-2 border-red-200 border-b-4 border-b-tvk-red space-y-2 active:scale-[0.99] transition-transform">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-tvk-red to-[#8B090E] text-tvk-yellow flex items-center justify-center border border-rose-300 shadow-sm shrink-0">
+                  <span className="font-tamil font-black text-[10px] text-tvk-yellow">தமிழ்</span>
                 </div>
                 <div>
-                  <h3 className="font-black text-sm text-tvk-red">Tamil Pride</h3>
-                  <p className="font-tamil text-[11px] font-bold text-amber-600">தமிழ் பெருமை</p>
+                  <h3 className="font-black text-xs text-tvk-red">Tamil Pride</h3>
+                  <p className="font-tamil text-[10px] font-bold text-amber-600">தமிழ் பெருமை</p>
                 </div>
               </div>
-              <p className="text-xs text-slate-700 font-medium">Respecting and promoting Tamil language, culture, and heritage.</p>
+              <p className="text-[10px] text-slate-700 font-medium">Respecting and promoting Tamil language, culture, and heritage.</p>
             </div>
 
             {/* 4. People First */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-blue-50/90 via-white to-indigo-50/70 p-3.5 rounded-2xl shadow-md border-2 border-blue-200 border-b-4 border-b-blue-600 space-y-2 active:scale-[0.99] transition-transform">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-700 text-white flex items-center justify-center border border-blue-300 shadow-sm shrink-0">
+            <div className="relative overflow-hidden bg-gradient-to-br from-blue-50/90 via-white to-indigo-50/70 p-3 rounded-2xl shadow-md border-2 border-blue-200 border-b-4 border-b-blue-600 space-y-2 active:scale-[0.99] transition-transform">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-700 text-white flex items-center justify-center border border-blue-300 shadow-sm shrink-0">
                   <HeartHandshake className="w-4 h-4 text-tvk-yellow" />
                 </div>
                 <div>
-                  <h3 className="font-black text-sm text-blue-900">People First</h3>
-                  <p className="font-tamil text-[11px] font-bold text-blue-600">மக்கள் முதன்மை</p>
+                  <h3 className="font-black text-xs text-blue-900">People First</h3>
+                  <p className="font-tamil text-[10px] font-bold text-blue-600">மக்கள் முதன்மை</p>
                 </div>
               </div>
-              <p className="text-xs text-slate-700 font-medium">Prioritizing citizen welfare and community development in all decisions.</p>
+              <p className="text-[10px] text-slate-700 font-medium">Prioritizing citizen welfare and community development in all decisions.</p>
             </div>
 
             {/* 5. Equality */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-rose-50/90 via-white to-amber-50/70 p-3.5 rounded-2xl shadow-md border-2 border-rose-200 border-b-4 border-b-tvk-red space-y-2 active:scale-[0.99] transition-transform">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-tvk-red to-[#8B090E] text-tvk-yellow flex items-center justify-center border border-rose-300 shadow-sm shrink-0">
+            <div className="relative overflow-hidden bg-gradient-to-br from-rose-50/90 via-white to-amber-50/70 p-3 rounded-2xl shadow-md border-2 border-rose-200 border-b-4 border-b-tvk-red space-y-2 active:scale-[0.99] transition-transform">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-tvk-red to-[#8B090E] text-tvk-yellow flex items-center justify-center border border-rose-300 shadow-sm shrink-0">
                   <Scale className="w-4 h-4 text-tvk-yellow" />
                 </div>
                 <div>
-                  <h3 className="font-black text-sm text-tvk-red">Equality</h3>
-                  <p className="font-tamil text-[11px] font-bold text-amber-600">சமத்துவம்</p>
+                  <h3 className="font-black text-xs text-tvk-red">Equality</h3>
+                  <p className="font-tamil text-[10px] font-bold text-amber-600">சமத்துவம்</p>
                 </div>
               </div>
-              <p className="text-xs text-slate-700 font-medium">Ensuring equal opportunities and justice for all communities.</p>
+              <p className="text-[10px] text-slate-700 font-medium">Ensuring equal opportunities and justice for all communities.</p>
             </div>
 
             {/* 6. Sustainability */}
-            <div className="relative overflow-hidden bg-gradient-to-br from-emerald-50/90 via-white to-teal-50/70 p-3.5 rounded-2xl shadow-md border-2 border-emerald-200 border-b-4 border-b-emerald-600 space-y-2 active:scale-[0.99] transition-transform">
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-700 text-white flex items-center justify-center border border-emerald-300 shadow-sm shrink-0">
+            <div className="relative overflow-hidden bg-gradient-to-br from-emerald-50/90 via-white to-teal-50/70 p-3 rounded-2xl shadow-md border-2 border-emerald-200 border-b-4 border-b-emerald-600 space-y-2 active:scale-[0.99] transition-transform">
+              <div className="flex items-center gap-2">
+                <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-700 text-white flex items-center justify-center border border-emerald-300 shadow-sm shrink-0">
                   <Leaf className="w-4 h-4 text-tvk-yellow" />
                 </div>
                 <div>
-                  <h3 className="font-black text-sm text-emerald-900">Sustainability</h3>
-                  <p className="font-tamil text-[11px] font-bold text-emerald-600">நிலையான வளர்ச்சி</p>
+                  <h3 className="font-black text-xs text-emerald-900">Sustainability</h3>
+                  <p className="font-tamil text-[10px] font-bold text-emerald-600">நிலையான வளர்ச்சி</p>
                 </div>
               </div>
-              <p className="text-xs text-slate-700 font-medium">Environmental conservation and sustainable development practices.</p>
+              <p className="text-[10px] text-slate-700 font-medium">Environmental conservation and sustainable development practices.</p>
             </div>
           </div>
         </div>

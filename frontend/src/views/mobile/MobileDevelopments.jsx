@@ -78,7 +78,7 @@ const defaultDevelopments = [
     location: 'Chennai, Tiruvallur & Kancheepuram',
     status: 'Completed',
     budget: '₹ 9.8 Crore',
-    imageUrl: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=600&q=80'
+    imageUrl: '/water_ro_kiosk.jpg'
   },
   {
     _id: 'dev_tvk_7',
@@ -117,7 +117,7 @@ const categoryFallbacks = {
   'Education': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80',
   'Healthcare': 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80',
   'Infrastructure': 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80',
-  'Sanitation': 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=600&q=80',
+  'Sanitation': '/water_ro_kiosk.jpg',
   'Digital': 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80'
 };
 
@@ -138,7 +138,7 @@ export const MobileDevelopments = () => {
             const key = apiItem.title.trim().toLowerCase();
             if (defaultMap.has(key)) {
               const existing = defaultMap.get(key);
-              const validApiImg = (apiItem.imageUrl && apiItem.imageUrl.startsWith('http')) ? apiItem.imageUrl : null;
+              const validApiImg = (apiItem.imageUrl && (apiItem.imageUrl.startsWith('http') || apiItem.imageUrl.startsWith('/'))) ? apiItem.imageUrl : null;
               const imageUrl = validApiImg || existing.imageUrl || categoryFallbacks[apiItem.category] || categoryFallbacks['Education'];
               defaultMap.set(key, { ...existing, ...apiItem, imageUrl });
             }
