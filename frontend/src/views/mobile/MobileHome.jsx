@@ -660,13 +660,6 @@ export const MobileHome = () => {
               <Star className="w-3.5 h-3.5 text-tvk-yellow fill-current" />
               தலைவர் செய்தி (Leader's Vision)
             </span>
-            <button
-              onClick={() => setQuotePlaying(!quotePlaying)}
-              className="px-2.5 py-1 bg-tvk-yellow text-tvk-dark rounded-full font-black text-[9px] flex items-center gap-1 shadow active:scale-95"
-            >
-              {quotePlaying ? <Volume2 className="w-3 h-3" /> : <Play className="w-3 h-3" />}
-              <span>{quotePlaying ? 'Playing' : 'Listen'}</span>
-            </button>
           </div>
           <p className="font-tamil text-[11px] text-amber-100 leading-snug font-bold">
             "மக்களின் பிரச்சினைகளுக்கே முன்னுரிமை. தமிழகத்தில் இருந்து மாற்றத்தைத் துவங்குவோம்!"

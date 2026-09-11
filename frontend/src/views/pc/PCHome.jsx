@@ -837,16 +837,6 @@ export const PCHome = () => {
                   </div>
                 </div>
 
-                <button
-                  onClick={() => setQuotePlaying(!quotePlaying)}
-                  className={`p-1.5 rounded-full border transition-all ${
-                    quotePlaying
-                      ? 'bg-tvk-yellow text-tvk-dark border-amber-300'
-                      : 'bg-red-950 text-amber-200 border-amber-400/40 hover:bg-red-900'
-                  }`}
-                >
-                  {quotePlaying ? <Volume2 className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5 ml-0.5" />}
-                </button>
               </div>
 
               <p className="font-tamil text-[11px] text-amber-100 italic leading-snug bg-red-950/70 p-2 rounded-xl border border-red-800">
