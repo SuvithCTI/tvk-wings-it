@@ -45,34 +45,30 @@ export const PCHome = () => {
   const pillarsData = [
     {
       id: 'healthcare',
-      titleEn: 'HEALTHCARE',
-      titleTa: 'சுகாதாரம்',
-      descEn: 'Modern clinics, mobile health units and affordable treatments for every family across Tamil Nadu.',
-      descTa: 'நவீன மருத்துவமனைகள், மொபைல் மருத்துவ பிரிவுகள் மற்றும் தமிழ்நாட்டின் ஒவ்வொரு குடும்பத்திற்கும் குறைந்த செலவில் தரமான சிகிச்சை.',
+      number: '01',
+      title: 'Healthcare',
+      description: 'Modern clinics, mobile health units, and affordable quality treatment for every family across Tamil Nadu.',
       image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80'
     },
     {
       id: 'education',
-      titleEn: 'EDUCATION',
-      titleTa: 'கல்வி',
-      descEn: 'Upgraded schools, digital classrooms and merit scholarships for the youth of Tamil Nadu.',
-      descTa: 'மேம்படுத்தப்பட்ட பள்ளிகள், டிஜிட்டல் வகுப்பறைகள் மற்றும் தமிழ்நாட்டின் இளைஞர்களுக்கான கல்வி உதவித்தொகை.',
+      number: '02',
+      title: 'Education',
+      description: 'Upgraded schools, digital smart classrooms, and merit scholarships for the youth of Tamil Nadu.',
       image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80'
     },
     {
       id: 'infrastructure',
-      titleEn: 'INFRASTRUCTURE',
-      titleTa: 'உள்கட்டமைப்பு',
-      descEn: 'Roads, drainage, water supply and smart urban planning for a world-class state.',
-      descTa: 'தரமான சாலைகள், கழிவுநீர் வடிகால் வசதி, பாதுகாக்கப்பட்ட குடிநீர் விநியோகம் மற்றும் உலகத் தரம் வாய்ந்த நகர வடிவமைப்பு.',
+      number: '03',
+      title: 'Infrastructure',
+      description: 'Quality roads, flood drainage, clean drinking water supply, and smart urban development across the state.',
       image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80'
     },
     {
       id: 'digital',
-      titleEn: 'DIGITAL SERVICES',
-      titleTa: 'டிஜிட்டல் சேவைகள்',
-      descEn: 'Online grievance tracking, transparent governance and citizen-first digital tools.',
-      descTa: 'ஆன்லைன் மூலம் கோரிக்கைகளைக் கண்காணித்தல், வெளிப்படைத் தன்மையுடன் கூடிய மக்கள் ஆட்சி மற்றும் நவீன டிஜிட்டல் சேவைகள்.',
+      number: '04',
+      title: 'Digital Services',
+      description: 'Online grievance tracking, transparent administration, and citizen-first digital government tools.',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80'
     }
   ];
@@ -1418,11 +1414,11 @@ export const PCHome = () => {
 
 
 
-      {/* 4 GOVERNANCE PILLARS 3D FLIP CARDS */}
+      {/* 4 GOVERNANCE PILLARS CARDS */}
       <section className="py-14 px-6 max-w-7xl mx-auto w-full bg-gradient-to-r from-[#70090C] via-[#9B111E] to-[#70090C] rounded-3xl border-2 border-amber-400/40 my-10 shadow-2xl overflow-hidden">
         <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
           <span className="px-4 py-1 bg-tvk-yellow text-tvk-dark rounded-full text-xs font-black uppercase tracking-widest shadow-md">
-            4 Core Pillars of Governance · 4 முக்கிய தூண்கள்
+            4 Core Pillars of Governance
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-white tracking-wide font-sans drop-shadow-md">
             Building a Stronger Tamil Nadu
@@ -1430,118 +1426,45 @@ export const PCHome = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {pillarsData.map((pillar, idx) => {
-            const isFlipped = !!flippedCards[idx];
-            return (
-              <div
-                key={pillar.id}
-                onClick={() => toggleCardFlip(idx)}
-                className="relative w-full h-[390px] cursor-pointer group"
-                style={{ perspective: '1200px' }}
-              >
-                <div
-                  className="w-full h-full relative transition-transform duration-700 ease-[cubic-bezier(0.34,1.56,0.64,1)]"
-                  style={{
-                    transformStyle: 'preserve-3d',
-                    transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
-                  }}
-                >
-                  {/* FRONT SIDE (English) */}
-                  <div
-                    className="absolute inset-0 w-full h-full flex flex-col bg-gradient-to-b from-[#A61420] via-[#8B0B10] to-[#600609] rounded-2xl border-2 border-amber-400/60 hover:border-amber-300 hover:shadow-[0_15px_30px_rgba(245,158,11,0.35)] transition-all duration-300 overflow-hidden shadow-2xl"
-                    style={{
-                      backfaceVisibility: 'hidden',
-                      WebkitBackfaceVisibility: 'hidden'
-                    }}
-                  >
-                    <div className="h-40 overflow-hidden border-b-2 border-amber-400/40 relative">
-                      <img
-                        src={pillar.image}
-                        alt={pillar.titleEn}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-black/20"></div>
-                      <div className="absolute top-3 right-3">
-                        <span className="px-2.5 py-0.5 bg-tvk-red/90 text-white font-extrabold text-[10px] rounded-full uppercase tracking-wider border border-amber-300/40 shadow-sm">
-                          ENGLISH
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-5 flex flex-col justify-between flex-1 text-center bg-[#8B0B10]/95">
-                      <div>
-                        <h3 className="font-extrabold text-amber-300 text-xl tracking-wider mb-2 drop-shadow-md">
-                          {pillar.titleEn}
-                        </h3>
-                        <p className="text-xs text-slate-100 font-medium leading-relaxed px-1">
-                          {pillar.descEn}
-                        </p>
-                      </div>
-                      <div className="pt-3 border-t border-amber-400/20">
-                        <button
-                          type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleCardFlip(idx);
-                          }}
-                          className="w-full flex items-center justify-center gap-2 text-xs text-slate-950 font-black bg-gradient-to-r from-amber-300 via-tvk-yellow to-amber-400 hover:from-amber-200 hover:to-yellow-300 py-2 px-4 rounded-full shadow-lg border border-amber-200/50 transition-all transform group-hover:scale-[1.02] active:scale-95"
-                        >
-                          <RotateCw className="w-3.5 h-3.5 text-slate-950 transition-transform duration-500" />
-                          <span>Flip for Tamil · திருப்பவும்</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* BACK SIDE (Tamil) */}
-                  <div
-                    className="absolute inset-0 w-full h-full flex flex-col bg-gradient-to-b from-[#A61420] via-[#8B0B10] to-[#600609] rounded-2xl border-2 border-amber-400/60 hover:border-amber-300 hover:shadow-[0_15px_30px_rgba(245,158,11,0.35)] transition-all duration-300 overflow-hidden shadow-2xl"
-                    style={{
-                      backfaceVisibility: 'hidden',
-                      WebkitBackfaceVisibility: 'hidden',
-                      transform: 'rotateY(180deg)'
-                    }}
-                  >
-                    <div className="h-40 overflow-hidden border-b-2 border-amber-400/40 relative">
-                      <img
-                        src={pillar.image}
-                        alt={pillar.titleTa}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0 bg-black/20"></div>
-                      <div className="absolute top-3 right-3">
-                        <span className="px-2.5 py-0.5 bg-amber-500/90 text-slate-950 font-black text-[10px] rounded-full uppercase tracking-wider border border-amber-300/40 shadow-sm">
-                          தமிழ்
-                        </span>
-                      </div>
-                    </div>
-                    <div className="p-5 flex flex-col justify-between flex-1 text-center bg-[#8B0B10]/95">
-                      <div>
-                        <h3 className="font-extrabold text-amber-300 text-xl tracking-wide mb-2 drop-shadow-md">
-                          {pillar.titleTa}
-                        </h3>
-                        <p className="text-xs text-slate-100 font-medium leading-relaxed px-1">
-                          {pillar.descTa}
-                        </p>
-                      </div>
-                      <div className="pt-3 border-t border-amber-400/20">
-                        <button
-                          type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleCardFlip(idx);
-                          }}
-                          className="w-full flex items-center justify-center gap-2 text-xs text-slate-950 font-black bg-gradient-to-r from-amber-300 via-tvk-yellow to-amber-400 hover:from-amber-200 hover:to-yellow-300 py-2 px-4 rounded-full shadow-lg border border-amber-200/50 transition-all transform group-hover:scale-[1.02] active:scale-95"
-                        >
-                          <RotateCw className="w-3.5 h-3.5 text-slate-950 transition-transform duration-500 rotate-180" />
-                          <span>திருப்பவும் · Flip Back</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+          {pillarsData.map((pillar) => (
+            <div
+              key={pillar.id}
+              className="bg-gradient-to-b from-[#A61420] via-[#8B0B10] to-[#600609] rounded-2xl border-2 border-amber-400/60 hover:border-amber-300 hover:shadow-[0_15px_30px_rgba(245,158,11,0.35)] transition-all duration-300 overflow-hidden shadow-2xl flex flex-col justify-between group"
+            >
+              {/* Top Image Banner */}
+              <div className="h-44 overflow-hidden border-b-2 border-amber-400/40 relative shrink-0 bg-slate-950">
+                <img
+                  src={pillar.image}
+                  alt={pillar.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
+                <div className="absolute top-3 right-3">
+                  <span className="px-2.5 py-0.5 bg-tvk-yellow text-tvk-dark font-black text-[10px] rounded-full uppercase tracking-wider border border-amber-300/40 shadow-md">
+                    Pillar {pillar.number}
+                  </span>
                 </div>
               </div>
-            );
-          })}
+
+              {/* Card Body */}
+              <div className="p-5 flex flex-col justify-between flex-1 text-center bg-[#8B0B10]/95 space-y-3">
+                <div className="space-y-2">
+                  <h3 className="font-extrabold text-amber-300 text-xl tracking-wide drop-shadow-md">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-xs text-slate-100 font-medium leading-relaxed px-1">
+                    {pillar.description}
+                  </p>
+                </div>
+
+                <div className="pt-3 border-t border-amber-400/20 flex items-center justify-center gap-1.5 text-[11px] font-black text-amber-200 uppercase tracking-wider">
+                  <span className="w-1.5 h-1.5 rounded-full bg-tvk-yellow" />
+                  <span>TVK Priority Focus</span>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

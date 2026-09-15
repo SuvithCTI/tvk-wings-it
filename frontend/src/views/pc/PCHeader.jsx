@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import { TVKFlag } from '../../components/common/TVKFlag';
 import { Shield, UserCheck, LogOut } from 'lucide-react';
+import { LanguageToggle } from '../../components/common/LanguageToggle';
 
 export const PCHeader = () => {
   const location = useLocation();
@@ -77,6 +78,8 @@ export const PCHeader = () => {
         {/* Right Callouts & Auth Buttons */}
         <div className="flex items-center gap-4">
 
+          {/* Language Toggle */}
+          <LanguageToggle />
 
           {user ? (
             <div className="flex items-center gap-3">

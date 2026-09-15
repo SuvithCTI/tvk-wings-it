@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthContext';
 import { TVKFlag } from '../../components/common/TVKFlag';
 import { Menu, X, Shield, UserCheck, LogOut, Sparkles } from 'lucide-react';
+import { LanguageToggle } from '../../components/common/LanguageToggle';
 
 export const MobileHeader = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -23,6 +24,8 @@ export const MobileHeader = () => {
         </Link>
 
         <div className="flex items-center gap-2">
+          {/* Language Toggle (compact pill) */}
+          <LanguageToggle compact={true} />
           <button
             onClick={() => setDrawerOpen(!drawerOpen)}
             className="p-1.5 text-slate-700 hover:bg-slate-100 rounded-lg"
